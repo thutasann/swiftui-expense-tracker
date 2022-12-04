@@ -6,6 +6,7 @@
 //
 
 // @StateObject -> Follows the lifecycle of the App
+// EnvironmentObject -> a property wrapper that we use to share data between many views
 
 import SwiftUI
 

@@ -11,7 +11,7 @@ import Combine
 final class TransactionListViewModel: ObservableObject {
     
     
-    @Published var transctions: [Transaction] = [];
+    @Published var transactions: [Transaction] = [];
     
     // MARK: Cancellables
     private var cancellables = Set<AnyCancellable>();
@@ -49,8 +49,8 @@ final class TransactionListViewModel: ObservableObject {
                     print("Finish Fetching Transctions")
                 }
             } receiveValue: { [weak self] result in
-                self?.transctions = result
-                dump(self?.transctions)
+                self?.transactions = result
+                dump(self?.transactions)
             }
             .store(in: &cancellables)
     }
