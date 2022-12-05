@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6B64BF33293C56A8008079B7 /* RecentTransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B64BF32293C56A8008079B7 /* RecentTransactionList.swift */; };
+		6B64BF35293CCB04008079B7 /* TransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B64BF34293CCB04008079B7 /* TransactionList.swift */; };
 		6BB91A24293A35430066CB9A /* ExpenseTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB91A23293A35430066CB9A /* ExpenseTrackerApp.swift */; };
 		6BB91A26293A35430066CB9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB91A25293A35430066CB9A /* ContentView.swift */; };
 		6BB91A28293A35460066CB9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BB91A27293A35460066CB9A /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		6B64BF32293C56A8008079B7 /* RecentTransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTransactionList.swift; sourceTree = "<group>"; };
+		6B64BF34293CCB04008079B7 /* TransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionList.swift; sourceTree = "<group>"; };
 		6BB91A20293A35430066CB9A /* ExpenseTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BB91A23293A35430066CB9A /* ExpenseTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerApp.swift; sourceTree = "<group>"; };
 		6BB91A25293A35430066CB9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				6B64BF32293C56A8008079B7 /* RecentTransactionList.swift */,
 				6BB91A33293A4EE20066CB9A /* TransactionModel.swift */,
 				6BB91A37293A55680066CB9A /* TransactionRow.swift */,
+				6B64BF34293CCB04008079B7 /* TransactionList.swift */,
 				6BB91A3C293ACA780066CB9A /* TransactionListViewModel.swift */,
 				6BB91A31293A49C70066CB9A /* Extensions.swift */,
 				6BB91A27293A35460066CB9A /* Assets.xcassets */,
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BB91A36293A51FB0066CB9A /* PreviewData.swift in Sources */,
+				6B64BF35293CCB04008079B7 /* TransactionList.swift in Sources */,
 				6B64BF33293C56A8008079B7 /* RecentTransactionList.swift in Sources */,
 				6BB91A34293A4EE20066CB9A /* TransactionModel.swift in Sources */,
 				6BB91A26293A35430066CB9A /* ContentView.swift in Sources */,

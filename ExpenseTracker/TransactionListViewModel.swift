@@ -5,8 +5,14 @@
 //  Created by Thuta sann on 12/3/22.
 // @Published -> send notifications to the subscribers whenever its value is changed
 
+// typealias -> Type Aliases allow defining types with a custom name (an Alias).
+
+
 import Foundation
 import Combine
+import Collections
+
+typealias TransactionGroup = OrderedDictionary<String, [Transaction]>
 
 final class TransactionListViewModel: ObservableObject {
     
@@ -53,6 +59,16 @@ final class TransactionListViewModel: ObservableObject {
                 dump(self?.transactions)
             }
             .store(in: &cancellables)
+    }
+    
+    // Group Transaction by month
+    func groupTransactionsByMonth() -> TransactionGroup {
+        guard !transactions.isEmpty else { return [:] } //[:] empty dictionary
+        
+        let groupedTransactions = TransactionGroup(grouping: transactions) { $0.month }
+        
+        return groupedTransactions
+                         
     }
     
 }

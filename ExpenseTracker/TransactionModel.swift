@@ -46,6 +46,11 @@ struct Transaction: Identifiable, Decodable, Hashable{
         return type == TransactionType.credit.rawValue ? amount : -amount
     }
     
+    // Month
+    var month: String{
+        dateParsed.formatted(.dateTime.year().month(.wide))
+    }
+    
 }
 
 // Transaction Type
