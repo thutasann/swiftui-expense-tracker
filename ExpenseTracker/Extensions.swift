@@ -35,3 +35,17 @@ extension String{
         return parsedDate
     }
 }
+
+// MARK: - To Make Date Strideable For Stride in Transaction ListView Model
+extension Date: Strideable{
+    func formatted() -> String{
+        return self.formatted(.dateTime.year().month().day())
+    }
+}
+
+// MARK: - Double Rounded Value
+extension Double {
+    func roundedTo2Digits() -> Double{
+        return (self * 100).rounded() / 100
+    }
+}
